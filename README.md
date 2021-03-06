@@ -27,3 +27,5 @@ make sure to:
 *   Blogs go into the "blog" folder.
 *   Blog related images go into "blogimgs" folder.
 *   I left the rest of the files in the root folder but feel free to organize things better
+
+### Feel free to send a pull request!
