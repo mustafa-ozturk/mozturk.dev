@@ -1,6 +1,5 @@
 # mozturk.dev
-My personal website
-This is a work in progress
+Template of my personal website (work in progress)
 ==========================
 
 Hi, this is a template I made out of my website [mozturk.dev](https://mozturk.dev/).
