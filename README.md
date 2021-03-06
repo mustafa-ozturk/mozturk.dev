@@ -6,7 +6,7 @@ Hi, this is a template I made out of my website [mozturk.dev](https://mozturk.de
 
 It's not much but you can read about it on my [blog](https://mozturk.dev/blog/how-i-built-my-website).
 
-NOTE: I don't actually recommend using this setup as a blog, it's way too tedious, I'm just using this to learn how blogs work and I plan on improving this website a lot. **However, the style.css file might be useful to you if you like the look of my website.**
+NOTE: I don't actually recommend using this setup as a blog, it's way too tedious to use, I'm just using this to learn how blogs work and I plan on improving this website a lot. **However, the style.css file might be useful to you if you like the look of my website.**
 
 How to use this template
 ------------------------
