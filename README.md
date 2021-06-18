@@ -14,7 +14,7 @@ I'm a software developer looking to gain valuable experience. I have worked on p
 June 2021 - Present,
 
 -   GithubStonks is a stock market game where the stocks are github repositories.
--   Developed a Full-Stack application that let's users play as a guest or login with github to trade made up stocks.
+-   Developed a Full-Stack web application that let's users play as a guest or login with github to trade made up stocks.
 -   Deployed the frontend on Netlify and the backend on AWS EC2 (Ubuntu server)
 -   Technologies: React, Express, Node, MongoDB, Javascript, Netlify, AWS EC2
 
