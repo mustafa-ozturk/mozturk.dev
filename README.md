@@ -31,4 +31,5 @@ Technologies covered: MongoDB, Express, React, Node, Javascript, Git, GitHub.
 ### Harvard University, CS50
 
 2021,
+
 Topics covered: C, Algorithms, Memory, Data Structures, Python, Flask, SQL, HTML, CSS, JavaScript
