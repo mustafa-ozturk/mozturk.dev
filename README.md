@@ -9,7 +9,7 @@ I'm a software developer looking to gain valuable experience. I have worked on p
 
 # Projects
 
-### GitHubStonks, [githubstonks.com](https://githubstonks.com/)
+### GitHubStonks, [githubstonks.com](https://githubstonks.com/) - [GitHub repo](https://github.com/mustafa-ozturk/githubstonks)
 
 June 2021 - Present,
 
