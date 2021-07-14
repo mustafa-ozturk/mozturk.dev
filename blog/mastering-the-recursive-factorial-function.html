@@ -1,130 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/assets/favicon_io/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/assets/favicon_io/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/assets/favicon_io/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/style.css" />
+	<head>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/assets/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/assets/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/assets/favicon_io/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
 
-        <title>mastering the recursive factorial function</title>
-        <meta
-            name="description"
-            content="mastering the recursive factorial function."
-        />
-    </head>
-    <body>
-        <nav>
-            <a href="/index.html" title="mozturk.dev">mozturk.dev</a>
-            <a href="/now.html" title="/now">/now</a>
-            <a href="/blog.html" title="/blog">/blog</a>
-        </nav>
-        <div class="blogpost">
-            <h1 class="blog-title">
-                mastering the recursive factorial function
-            </h1>
-            <em>March 15, 2021</em>
-            <p>
-                Last night I was on HackerRank doing some problems, and I came
-                across a simple factorial problem.
-            </p>
-            <p>This is how I solved it:</p>
-            <script src="https://gist.github.com/mustafa-ozturk/931a5ebc6acebe57ced3b1e527cb2f16.js"></script>
-            <p>
-                Although this solution was intuitive, I knew that there must be
-                a cleaner-looking way of doing this. I quickly found a recursive
-                function that does the same thing in fewer lines, but I just
-                couldn't understand how.
-            </p>
-            <script src="https://gist.github.com/mustafa-ozturk/5c124c20a7fd19014679e7db0d44ccde.js"></script>
-            <p>
-                I had previously read articles, watched videos, yet for some
-                reason, recursion just wouldn't click in my head. I then went on
-                my favorite discord server, and asked: "how does this function
-                work?" and after an hour of back and forth (special thanks to
-                Jawad and Ian). I now finally know how to use recursion, more
-                specifically, how to use one to solve a factorial problem.
-            </p>
-            <p>
-                To strengthen my own knowledge, I will try to explain how it
-                works.
-            </p>
-            <p>Simply put, recursion is a function that calls itself.</p>
-            <p>This is the recursive factorial function:</p>
-            <script src="https://gist.github.com/mustafa-ozturk/5c124c20a7fd19014679e7db0d44ccde.js"></script>
-            <p>Let's say <code>n</code> is 4:</p>
-            <script src="https://gist.github.com/mustafa-ozturk/b2841932a80cca387add316e0d520794.js"></script>
-            <p>
-                This function will return <code>4 * factorial(4 - 1)</code>.
-                <br />
-                and to find out what <code>factorial(3)</code> is,
-            </p>
-            <p>It will call itself with 3 passed in as the argument</p>
-            <script src="https://gist.github.com/mustafa-ozturk/76adf7477e210fe06ff6f4c7da6c7d9b.js"></script>
-            <p>
-                <code>factorial(3)</code> will return
-                <code>3 * factorial(3 - 1)</code>
-                <br />
-                and to find out what <code>factorial(2)</code> is,
-            </p>
-            <p>It will call itself with 2 passed in as the argument</p>
-            <script src="https://gist.github.com/mustafa-ozturk/18b9c93c7506cce1a2beb48a80796680.js"></script>
-            <p>
-                <code>factorial(2)</code> will return
-                <code>2 * factorial(2 - 1)</code>
-                <br />
-                and to find out what <code>factorial(1)</code> is,
-            </p>
-            <p>It will call itself with 1 passed in as the argument</p>
-            <script src="https://gist.github.com/mustafa-ozturk/1b2d19443aeb06217a984c8eaaee6e74.js"></script>
-            <p>now remember the if statement.</p>
-            <script src="https://gist.github.com/mustafa-ozturk/5a523dd167ac36a1ae348dad4cfc0dc5.js"></script>
-            <p>
-                Since <code>n</code> is no longer greater than 1 it will simply
-                <code>return 1</code>
-            </p>
-            <p>
-                This is called the "base case" and it means that there is no
-                recursion left to do (i.e no function of itself left to call).
-            </p>
-            <p>
-                Now that the function knows <code>factorial(1)</code> is equal
-                to 1
-                <br />
-                then <code>factorial(2)</code> must equal 2 * 1
-                <br />
-                and <code>factorial(3)</code> must equal 3 * (2 * 1)
-                <br />
-                and <code>factorial(4)</code> must equal 4 * (3 * ( 2 * 1) )
-                <br />
-                and that equals to <code>24</code>.
-            </p>
-            <p>
-                Understanding recursion was very satisfying. Hopefully, this
-                makes sense to you.
-            </p>
-            <img
-                class="blog-img"
-                src="./blogimgs/recursion.png"
-                alt="to understand recursion you must first under recursion -Ian"
-            />
-        </div>
-    </body>
+		<title>mastering the recursive factorial function</title>
+		<meta
+			name="description"
+			content="mastering the recursive factorial function."
+		/>
+	</head>
+	<body>
+		<nav>
+			<a href="/index.html" title="mozturk.dev">mozturk.dev</a>
+			<a href="/blog.html" title="/blog">/blog</a>
+		</nav>
+		<div class="blogpost">
+			<h1 class="blog-title">
+				mastering the recursive factorial function
+			</h1>
+			<em>March 15, 2021</em>
+			<p>
+				Last night I was on HackerRank doing some problems, and I came
+				across a simple factorial problem.
+			</p>
+			<p>This is how I solved it:</p>
+			<script src="https://gist.github.com/mustafa-ozturk/931a5ebc6acebe57ced3b1e527cb2f16.js"></script>
+			<p>
+				Although this solution was intuitive, I knew that there must be
+				a cleaner-looking way of doing this. I quickly found a recursive
+				function that does the same thing in fewer lines, but I just
+				couldn't understand how.
+			</p>
+			<script src="https://gist.github.com/mustafa-ozturk/5c124c20a7fd19014679e7db0d44ccde.js"></script>
+			<p>
+				I had previously read articles, watched videos, yet for some
+				reason, recursion just wouldn't click in my head. I then went on
+				my favorite discord server, and asked: "how does this function
+				work?" and after an hour of back and forth (special thanks to
+				Jawad and Ian). I now finally know how to use recursion, more
+				specifically, how to use one to solve a factorial problem.
+			</p>
+			<p>
+				To strengthen my own knowledge, I will try to explain how it
+				works.
+			</p>
+			<p>Simply put, recursion is a function that calls itself.</p>
+			<p>This is the recursive factorial function:</p>
+			<script src="https://gist.github.com/mustafa-ozturk/5c124c20a7fd19014679e7db0d44ccde.js"></script>
+			<p>Let's say <code>n</code> is 4:</p>
+			<script src="https://gist.github.com/mustafa-ozturk/b2841932a80cca387add316e0d520794.js"></script>
+			<p>
+				This function will return <code>4 * factorial(4 - 1)</code>.
+				<br />
+				and to find out what <code>factorial(3)</code> is,
+			</p>
+			<p>It will call itself with 3 passed in as the argument</p>
+			<script src="https://gist.github.com/mustafa-ozturk/76adf7477e210fe06ff6f4c7da6c7d9b.js"></script>
+			<p>
+				<code>factorial(3)</code> will return
+				<code>3 * factorial(3 - 1)</code>
+				<br />
+				and to find out what <code>factorial(2)</code> is,
+			</p>
+			<p>It will call itself with 2 passed in as the argument</p>
+			<script src="https://gist.github.com/mustafa-ozturk/18b9c93c7506cce1a2beb48a80796680.js"></script>
+			<p>
+				<code>factorial(2)</code> will return
+				<code>2 * factorial(2 - 1)</code>
+				<br />
+				and to find out what <code>factorial(1)</code> is,
+			</p>
+			<p>It will call itself with 1 passed in as the argument</p>
+			<script src="https://gist.github.com/mustafa-ozturk/1b2d19443aeb06217a984c8eaaee6e74.js"></script>
+			<p>now remember the if statement.</p>
+			<script src="https://gist.github.com/mustafa-ozturk/5a523dd167ac36a1ae348dad4cfc0dc5.js"></script>
+			<p>
+				Since <code>n</code> is no longer greater than 1 it will simply
+				<code>return 1</code>
+			</p>
+			<p>
+				This is called the "base case" and it means that there is no
+				recursion left to do (i.e no function of itself left to call).
+			</p>
+			<p>
+				Now that the function knows <code>factorial(1)</code> is equal
+				to 1
+				<br />
+				then <code>factorial(2)</code> must equal 2 * 1
+				<br />
+				and <code>factorial(3)</code> must equal 3 * (2 * 1)
+				<br />
+				and <code>factorial(4)</code> must equal 4 * (3 * ( 2 * 1) )
+				<br />
+				and that equals to <code>24</code>.
+			</p>
+			<p>
+				Understanding recursion was very satisfying. Hopefully, this
+				makes sense to you.
+			</p>
+			<img
+				class="blog-img"
+				src="./blogimgs/recursion.png"
+				alt="to understand recursion you must first under recursion -Ian"
+			/>
+		</div>
+	</body>
 </html>
