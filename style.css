@@ -58,6 +58,12 @@ code {
 	margin: 0 auto;
 	width: 100%;
 }
+.project-title {
+	text-decoration: underline;
+}
+.project-desc {
+	font: 14px/1.7 monospace;
+}
 /* mobile */
 @media screen and (max-width: 900px) {
 	body {
