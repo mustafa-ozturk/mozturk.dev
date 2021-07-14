@@ -42,7 +42,7 @@ a:hover {
 	color: white;
 	background-color: hsl(240, 100%, 22%);
 }
-em {
+.date {
 	opacity: 75%;
 	margin-right: 2em;
 }
