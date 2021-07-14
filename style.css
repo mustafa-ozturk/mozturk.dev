@@ -1,17 +1,23 @@
 body {
-    font: 14px/1.7 monospace;
-    margin: 2em auto 10em;
-    max-width: 900px;
+	font: 14px/1.7 monospace;
+	margin: 2em auto 10em;
+	max-width: 650px;
+	color: #383838;
 }
 h1 {
-    font-family: Helvetica;
-    font-size: 21px;
-    line-height: 1.4;
+	font-family: Helvetica;
+	font-size: 21px;
+	line-height: 1.4;
+	color: hsl(0, 0%, 22%);
 }
-h2,h3,h4,h5 {
-    font-family: Helvetica;
-    font-size: 18px;
-    line-height: 1;
+h2,
+h3,
+h4,
+h5 {
+	font-family: Helvetica;
+	font-size: 18px;
+	line-height: 1;
+	color: #383838;
 }
 #header-img {
 	display: block;
@@ -20,68 +26,68 @@ h2,h3,h4,h5 {
 	height: 25vh;
 }
 nav {
-    text-align: right;
+	text-align: right;
 }
 nav a {
-    margin-left: 2em;
+	margin-left: 2em;
 }
 a {
-    color: blue;
-    text-decoration: none;
+	color: hsl(240, 100%, 22%);
+	text-decoration: none;
 }
 a:hover {
-    color: white;
-    background-color: blue;
+	color: white;
+	background-color: hsl(240, 100%, 22%);
 }
 em {
-    opacity: 75%;
-    margin-right: 2em;
+	opacity: 75%;
+	margin-right: 2em;
 }
 .blog-title {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .blogpost {
-    margin: 4em auto;
-    max-width: 650px;
+	margin: 4em auto;
+	max-width: 650px;
 }
 code {
-    background-color: lightgray;
+	background-color: lightgray;
 }
 .blog-img {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
 }
 /* mobile */
 @media screen and (max-width: 900px) {
-    body {
-        max-width: none;
-    }
-    #header-img {
-        position: relative;
-        margin-top: -2em;
-    }
-    nav {
-        margin-right: 0;
-        text-align: center;
-    }
-    nav a {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    section {
-        margin-right: 1em;
-        margin-left: 1em;
-    }
-    .blogpost {
-        margin: 4em auto;
-    }
-    .blog{
-        margin: 1em;
-    }
+	body {
+		max-width: none;
+	}
+	#header-img {
+		position: relative;
+		margin-top: -2em;
+	}
+	nav {
+		margin-right: 0;
+		text-align: center;
+	}
+	nav a {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+	section {
+		margin-right: 1em;
+		margin-left: 1em;
+	}
+	.blogpost {
+		margin: 4em auto;
+	}
+	.blog {
+		margin: 1em;
+	}
 }
 @media screen and (max-width: 600px) {
-    .blogpost {
-        margin: 1rem;
-    }
+	.blogpost {
+		margin: 1rem;
+	}
 }
